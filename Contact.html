@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: blueviolet;
+            text-align: center;
+        }
+        .text{
+            color: rgb(5, 130, 202);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 60px;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-shadow: 2px 5px #000;
+        }
+        p{
+            color: #000;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation">
+            <a href="#">
+                <img class="llogo" src="images/uniformes2.jpg" alt="logo">
+            </a>
+            <ul class="enlaces-menu">
+                <li> 
+                    <a class="#" href="index.html">Inicio</a>     
+                </li>
+                <li>
+                    <a class="#" href="Services.html">servicios</a>
+                    
+                </li>
+                <li>
+                    <a class="#" href="Contact.html">contactos</a>
+                </li>
+                <li>
+                    <a class="#" href="About.html">Acerca de </a>
+                </li>
+            </ul>
+            <button class="ham" type="button">
+                <span class="br-1"></span>
+                <span class="br-2"></span>
+                <span class="br-3"></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <h1 class="text2">Dejanos tu correo y en breve nos contactaremos!!</h1>
+        <form action="https://formsubmit.co/lauraafuenmayors@gmail.com" method="POST">
+            <h2>Contacto</h2>
+            <div class="input-group">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Name">
+
+                <label for="phone">Telefono</label>
+                <input type="tel" name="phone" id="phone" placeholder="Telefono">
+
+                <label for="email">correo</label>
+                <input type="email" name="email" id="email" placeholder="Correo">
+
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje..."></textarea>
+
+                <div class="form-txt">
+                    <a href="#">Politica de privacidad</a>
+                    <a href="#">Terminos y condiciones</a>
+                </div>
+                <input class="btn" type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

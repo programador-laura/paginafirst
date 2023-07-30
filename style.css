@@ -1,0 +1,260 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,  *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(https://www.cpajournal.com/wp-content/uploads/2019/02/GettyImages-1001713236-730x330.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.llogo{
+    width: 100px;
+    height: 100px;
+   display: flex;
+   align-items: center;
+   margin-right: 500px
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 10vh;
+    background-color: #294674;
+}
+.ham{
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+.ham span{
+    display: block;
+    background-color: #f3f3f3;
+    height: 3px;
+    width: 28px;
+    margin: 10px auto;
+    border-radius: 2px;
+    
+}
+.enlaces-menu{
+    display: flex;
+    padding: 0;
+}
+.enlaces-menu li{
+    padding: 0 40px;
+    list-style-type: none;
+    transition: 0.3s;
+}
+.enlaces-menu li a{
+    text-decoration: none;
+    color: #f3f3f3;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: black;
+}
+.enlaces-menu li:hover{
+    background-color: rgb(62, 130, 197);
+
+}
+
+
+@media (max-width: 767px) {
+   body{
+    overflow: hidden;
+    padding: 30px;
+   }
+   form{
+    padding: 50px;
+    width: 100%;
+   }
+   input{
+    padding: 15px;
+   }
+   .logo{
+    padding-left:25px;
+   }
+   .ham{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+   }
+   nav{
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top:25px 0;
+
+   }
+   .enlaces-menu{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 92vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: none;
+   }
+   .enlaces-menu li{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+   }
+}
+.enlaces-menu.active{
+    display: flex;
+}
+
+/* contact */
+
+form{
+    padding: 40px 55px;
+    box-shadow: 0 0 28px black;
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    margin-top: 90px;
+    margin-left:500px;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h2{
+    color: #294674;
+    font-size: 30px;
+    margin-top: -10px;
+    
+}
+label{
+    color: #294674;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+input, textarea{
+    padding: 5px 25px;
+    border-radius: 25px;
+    margin-bottom: 5px;
+    background-color: #f3f3f3;
+    border: 2px solid floralwhite;
+    color: #294674;
+    outline: none;
+}
+input::placeholder, textarea::placeholder{
+    color: floralwhite;
+
+}
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.form-txt a{
+    color: #294674;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btn{
+    font-size: 16px;
+    color: #f3f3f3;
+    border: 0;
+    border-radius: 25px;
+    background-color: aqua;
+    box-shadow:0 0 20px black;
+    cursor: pointer;
+
+}
+.btn:hover {
+    background-color: aqua;
+}
+/* about */
+.container{
+    height: 200px;
+    border-color: #294674;
+    display: flex;
+    justify-content: center ;
+}
+.img{
+    margin: 0 10px;
+    width: 350px;
+}
+/* footer */
+.pie-pagina{
+    width: 100%;
+    background-color: #294674;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px; 
+    padding: 45px, 0;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 200px;
+
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #f3f3f3;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #f3f3f3;
+    margin-bottom: 10px;
+    font-size: 10px;
+} 
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: floralwhite;
+    margin-right: 10px;
+    background-color: #09afbb;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #294674;
+}
+.pie-pagina .grupo-2{
+    background-color: #041735;
+    padding: 15px 10px;
+    text-align: center;
+    color: white ;
+}
+.pie-pagina .grupo-2 {
+    font-size: 15px;
+}
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:30px;
+        padding: 35px 0;
+    }
+}
